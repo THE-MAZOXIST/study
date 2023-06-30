@@ -1,18 +1,11 @@
 
-var a = 1;
-let b = 2;
-
-var c = 3;
-let d = 4;
-console.log('a -> ',a)
-console.log('b -> ',b)
-console.log('c -> ',c)
-console.log('d -> ',d)
-
-function counter (x){
-  let i = 1;
-  while (i <= x) {
-    console.log(i)
-    i++
-  };
+var a = [1,0,0,1,0,1,1,0,1,1,0,0,1,0,1,1,1,0,1,0]
+function count10() {
+  let f = {'1': 0, '0': 0}
+ a.map((i) => {if (i===1) return f['1']+=1; else return f['0']+=1 })
+     return f
 }
+count10()
+
+//на выходе объект у которого 2 поле 1 и 0 которые показывает сколько чего
+//массив из 1 0 и создать функцию которая получает на вход этот массив а на выходе показывает сколько 1 и 0
