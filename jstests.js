@@ -1,5 +1,7 @@
-const message = 'Hello world'; // Try edit me
-
+/*
+Создайте программу-калькулятор, которая принимает два числа
+и выполняет выбранную операцию (+, -, *, /).
+*/
 
 function calculator(number1, number2, sign) {
   var number1 = 4;
