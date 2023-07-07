@@ -10,4 +10,3 @@ function count10() {
  a.map((i) => {if (i===1) return f['1']+=1; if (i===0) return f['0']+=1 })
      return f
 }
-count10()
