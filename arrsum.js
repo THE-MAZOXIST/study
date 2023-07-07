@@ -12,7 +12,6 @@ var sum = 0;
       if (typeof sum == 'string') {
         return 'проверь значения';
       } else {
-        return (sum)
+        return sum;
       }
-
 }
