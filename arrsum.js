@@ -9,9 +9,10 @@ var sum = 0;
   for(var i = 0; i < array.length; i++){
       sum += array[i];
       }
-      if (typeof sum == 'string') {
-        return 'проверь значения';
-      } else {
-        return sum;
+  if (typeof sum === 'number') {
+      return sum;
       }
+  else {
+      return 'проверь значения';
+    }
 }
