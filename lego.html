@@ -1,40 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="lego.css">
-    <title>lego in stock</title>
-  </head>
-  <body>
-    <header>
-  <img src="/logo.png" alt="LEGO"> <!-- Логотип сайта -->
-  <div id="menu"> <!-- Меню -->
-    <ul>
-      <li><a href="/">Главная</a></li>
-      <li><a href="/about.lego">О нас</a></li>
-      <li><a href="/contacts.lego">Контакты</a></li>
-    </ul>
-  </div>
-</header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Небольшая вёрстка</title>
 
-    <table>
-      <tr>
-        <th>speed champions</th>
-        <th>minifigures series</th>
-        <th>star wars</th>
-      </tr>
-      <tr>
-        <td>Harry potter</td>
-        <td>architecture</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
-    <div class="block">Первый</div>
-<div class="block">Второй</div>
-  </body>
+  <style>
+    div {
+      width: 500px;
+      height: 500px;
+
+      background: #333333;
+    }
+
+    #main {
+      color: green;
+      width: 750px;
+    }
+
+    .text-white {
+      color: blue;
+    }
+
+    .alert {
+      height: 350px;
+      color: gray;
+    }
+
+    div {
+      background: blue;
+    }
+
+    .alert-warning {
+      background: #000000;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="main" class="text-white alert alert-warning">Какой-то текст</div>
+</body>
 </html>
