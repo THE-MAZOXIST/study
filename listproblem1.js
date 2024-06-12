@@ -4,7 +4,7 @@
 
 writeAllMembers(list) -> ["roma", "max"]
 */
-
+/*тут была Алеся*/
 function getAllNames(list) {
   let names = [];
   let current = list;
