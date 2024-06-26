@@ -1,0 +1,190 @@
+<html><head><base href="https://giftbuddy.com/calendar">
+<title>GiftBuddy - Gift Calendar</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+  }
+  header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  nav {
+    background-color: #3a80d2;
+    padding: 0.5em;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+  }
+  nav a:hover {
+    background-color: #2a70c2;
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1em;
+    margin-top: 2em;
+  }
+  .calendar-header {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em;
+    background-color: #4a90e2;
+    color: white;
+  }
+  .calendar-day {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1em;
+    min-height: 100px;
+  }
+  .calendar-day.current {
+    background-color: #e6f2ff;
+  }
+  .calendar-day.has-event {
+    background-color: #fff0f0;
+  }
+  .event {
+    background-color: #ff9999;
+    border-radius: 4px;
+    padding: 0.2em 0.5em;
+    margin-top: 0.5em;
+    font-size: 0.8em;
+  }
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .controls button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .controls button:hover {
+    background-color: #3a80d2;
+  }
+  footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>GiftBuddy</h1>
+    <p>Gift Calendar</p>
+  </header>
+  
+  <nav>
+    <a href="https://giftbuddy.com/dashboard">Dashboard</a>
+    <a href="https://giftbuddy.com/friends">Friends</a>
+    <a href="https://giftbuddy.com/lists">Gift Lists</a>
+    <a href="https://giftbuddy.com/calendar">Calendar</a>
+  </nav>
+  
+  <main>
+    <div class="controls">
+      <button id="prev-month">&lt; Previous Month</button>
+      <h2>June 2023</h2>
+      <button id="next-month">Next Month &gt;</button>
+    </div>
+    
+    <div class="calendar">
+      <div class="calendar-header">Sun</div>
+      <div class="calendar-header">Mon</div>
+      <div class="calendar-header">Tue</div>
+      <div class="calendar-header">Wed</div>
+      <div class="calendar-header">Thu</div>
+      <div class="calendar-header">Fri</div>
+      <div class="calendar-header">Sat</div>
+      
+      <div class="calendar-day"></div>
+      <div class="calendar-day"></div>
+      <div class="calendar-day"></div>
+      <div class="calendar-day"></div>
+      <div class="calendar-day">1</div>
+      <div class="calendar-day">2</div>
+      <div class="calendar-day">3</div>
+      
+      <div class="calendar-day">4</div>
+      <div class="calendar-day">5</div>
+      <div class="calendar-day">6</div>
+      <div class="calendar-day">7</div>
+      <div class="calendar-day">8</div>
+      <div class="calendar-day current">9
+        <div class="event">Today</div>
+      </div>
+      <div class="calendar-day">10</div>
+      
+      <div class="calendar-day">11</div>
+      <div class="calendar-day">12</div>
+      <div class="calendar-day">13</div>
+      <div class="calendar-day">14</div>
+      <div class="calendar-day has-event">15
+        <div class="event">Mom's Birthday</div>
+      </div>
+      <div class="calendar-day">16</div>
+      <div class="calendar-day">17</div>
+      
+      <div class="calendar-day">18</div>
+      <div class="calendar-day">19</div>
+      <div class="calendar-day">20</div>
+      <div class="calendar-day">21</div>
+      <div class="calendar-day">22</div>
+      <div class="calendar-day">23</div>
+      <div class="calendar-day">24</div>
+      
+      <div class="calendar-day">25</div>
+      <div class="calendar-day">26</div>
+      <div class="calendar-day">27</div>
+      <div class="calendar-day">28</div>
+      <div class="calendar-day">29</div>
+      <div class="calendar-day">30</div>
+      <div class="calendar-day"></div>
+    </div>
+    
+    <h3>Upcoming Gift Occasions</h3>
+    <ul>
+      <li><strong>June 15:</strong> Mom's Birthday</li>
+      <li><strong>July 8:</strong> John and Lisa's Wedding</li>
+      <li><strong>August 1:</strong> Dad's Retirement</li>
+      <li><strong>September 5:</strong> Emily's Birthday</li>
+    </ul>
+    
+    <h3>Gift Reminders</h3>
+    <ul>
+      <li>Order Mom's birthday gift by June 10</li>
+      <li>Confirm wedding gift registry for John and Lisa</li>
+      <li>Start planning group gift for Dad's retirement</li>
+    </ul>
+    
+    <button id="add-event">Add New Gift Occasion</button>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 GiftBuddy. All rights reserved. | <a href="https://giftbuddy.com/privacy">Privacy Policy</a> | <a href="https://giftbuddy.com/terms">Terms of Service</a></p>
+  </footer>
+</body></html>

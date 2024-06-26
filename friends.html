@@ -1,0 +1,204 @@
+<html><head><base href="friends.html"><title>GiftBuddy - Friends</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+  }
+  header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  nav {
+    background-color: #3a80d2;
+    padding: 0.5em;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+  }
+  nav a:hover {
+    background-color: #2a70c2;
+  }
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  .friends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5em;
+  }
+  .friend-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1em;
+    text-align: center;
+  }
+  .friend-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+  }
+  .add-friend {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1em;
+  }
+  .add-friend:hover {
+    background-color: #45a049;
+  }
+  .search-bar {
+    display: flex;
+    margin-bottom: 1em;
+  }
+  .search-bar input {
+    flex-grow: 1;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  .search-bar button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .friend-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5em;
+  }
+  .friend-actions a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>GiftBuddy</h1>
+    <p>Your Friends</p>
+  </header>
+
+  <nav>
+    <a href=".htmldashboard.html">Dashboard</a>
+    <a href="friends.html">Friends</a>
+    <a href="lists.html">Gift Lists</a>
+    <a href="calendar.html">Calendar</a>
+  </nav>
+
+  <main>
+    <button class="add-friend">Add New Friend</button>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search friends...">
+      <button>Search</button>
+    </div>
+
+    <div class="friends-grid">
+      <div class="friend-card">
+        <img src="https://giftbuddy.com/images/emily.jpg" alt="Emily" width="100" height="100">
+        <h3>Emily</h3>
+        <p>Birthday: August 17</p>
+        <div class="friend-actions">
+          <a href="https://giftbuddy.com/friends/emily/wishlist">Wishlist</a>
+          <a href="https://giftbuddy.com/friends/emily/gifts">Gift History</a>
+        </div>
+      </div>
+
+      <div class="friend-card">
+        <img src="https://giftbuddy.com/images/alex.jpg" alt="Alex" width="100" height="100">
+        <h3>Alex</h3>
+        <p>Birthday: October 5</p>
+        <div class="friend-actions">
+          <a href="https://giftbuddy.com/friends/alex/wishlist">Wishlist</a>
+          <a href="https://giftbuddy.com/friends/alex/gifts">Gift History</a>
+        </div>
+      </div>
+
+      <div class="friend-card">
+        <img src="https://giftbuddy.com/images/sophia.jpg" alt="Sophia" width="100" height="100">
+        <h3>Sophia</h3>
+        <p>Birthday: July 22</p>
+        <div class="friend-actions">
+          <a href="https://giftbuddy.com/friends/sophia/wishlist">Wishlist</a>
+          <a href="https://giftbuddy.com/friends/sophia/gifts">Gift History</a>
+        </div>
+      </div>
+
+      <div class="friend-card">
+        <img src="https://giftbuddy.com/images/mike.jpg" alt="Mike" width="100" height="100">
+        <h3>Mike</h3>
+        <p>Birthday: December 3</p>
+        <div class="friend-actions">
+          <a href="https://giftbuddy.com/friends/mike/wishlist">Wishlist</a>
+          <a href="https://giftbuddy.com/friends/mike/gifts">Gift History</a>
+        </div>
+      </div>
+
+      <div class="friend-card">
+        <img src="https://giftbuddy.com/images/lisa.jpg" alt="Lisa" width="100" height="100">
+        <h3>Lisa</h3>
+        <p>Birthday: March 15</p>
+        <div class="friend-actions">
+          <a href="https://giftbuddy.com/friends/lisa/wishlist">Wishlist</a>
+          <a href="https://giftbuddy.com/friends/lisa/gifts">Gift History</a>
+        </div>
+      </div>
+
+      <div class="friend-card">
+        <img src="https://giftbuddy.com/images/john.jpg" alt="John" width="100" height="100">
+        <h3>John</h3>
+        <p>Birthday: September 8</p>
+        <div class="friend-actions">
+          <a href="https://giftbuddy.com/friends/john/wishlist">Wishlist</a>
+          <a href="https://giftbuddy.com/friends/john/gifts">Gift History</a>
+        </div>
+      </div>
+    </div>
+
+    <h3>Friend Groups</h3>
+    <ul>
+      <li><a href="https://giftbuddy.com/groups/family">Family</a></li>
+      <li><a href="https://giftbuddy.com/groups/coworkers">Coworkers</a></li>
+      <li><a href="https://giftbuddy.com/groups/college-friends">College Friends</a></li>
+    </ul>
+
+    <h3>Upcoming Birthdays</h3>
+    <ul>
+      <li><strong>June 15:</strong> Mom</li>
+      <li><strong>July 8:</strong> John and Lisa (Wedding)</li>
+      <li><strong>July 22:</strong> Sophia</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 GiftBuddy. All rights reserved. | <a href="https://giftbuddy.com/privacy">Privacy Policy</a> | <a href="https://giftbuddy.com/terms">Terms of Service</a></p>
+  </footer>
+</body></html>

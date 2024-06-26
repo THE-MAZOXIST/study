@@ -1,0 +1,217 @@
+<html><head><base href="lists.html"><title>GiftBuddy - Gift Lists</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+  }
+  header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  nav {
+    background-color: #3a80d2;
+    padding: 0.5em;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+  }
+  nav a:hover {
+    background-color: #2a70c2;
+  }
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  .list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+  }
+  .gift-list {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1em;
+  }
+  .gift-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  .gift-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 1em;
+    border-radius: 4px;
+  }
+  .add-list, .add-gift {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+  }
+  .add-list:hover, .add-gift:hover {
+    background-color: #45a049;
+  }
+  footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .list-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+  .list-actions button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .list-actions button:hover {
+    background-color: #e0e0e0;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>GiftBuddy</h1>
+    <p>Manage Your Gift Lists</p>
+  </header>
+
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="friends.html">Friends</a>
+    <a href="lists.html">Gift Lists</a>
+    <a href="calendar.html">Calendar</a>
+  </nav>
+
+  <main>
+    <h2>My Gift Lists</h2>
+    <button class="add-list">Create New List</button>
+
+    <div class="list-container">
+      <div class="gift-list">
+        <h3>Mom's Birthday (June 15)</h3>
+        <div class="gift-item">
+          <img src="https://giftbuddy.com/images/cookbook.jpg" alt="Vegan Cookbook">
+          <div>
+            <h4>Vegan Cookbook</h4>
+            <p>Price: $24.99</p>
+          </div>
+        </div>
+        <div class="gift-item">
+          <img src="https://giftbuddy.com/images/gardening-set.jpg" alt="Gardening Set">
+          <div>
+            <h4>Gardening Set</h4>
+            <p>Price: $39.99</p>
+          </div>
+        </div>
+        <div class="gift-item">
+          <img src="https://giftbuddy.com/images/spa-voucher.jpg" alt="Spa Day Voucher">
+          <div>
+            <h4>Spa Day Voucher</h4>
+            <p>Price: $100.00</p>
+          </div>
+        </div>
+        <button class="add-gift">Add Gift</button>
+        <div class="list-actions">
+          <button>Share List</button>
+          <button>Edit List</button>
+        </div>
+      </div>
+
+      <div class="gift-list">
+        <h3>John and Lisa's Wedding (July 8)</h3>
+        <div class="gift-item">
+          <img src="https://giftbuddy.com/images/toaster.jpg" alt="Smart Toaster">
+          <div>
+            <h4>Smart Toaster</h4>
+            <p>Price: $79.99</p>
+          </div>
+        </div>
+        <div class="gift-item">
+          <img src="https://giftbuddy.com/images/cutlery-set.jpg" alt="Premium Cutlery Set">
+          <div>
+            <h4>Premium Cutlery Set</h4>
+            <p>Price: $199.99</p>
+          </div>
+        </div>
+        <div class="gift-item">
+          <img src="https://giftbuddy.com/images/gift-card.jpg" alt="Home Depot Gift Card">
+          <div>
+            <h4>Home Depot Gift Card</h4>
+            <p>Price: $150.00</p>
+          </div>
+        </div>
+        <button class="add-gift">Add Gift</button>
+        <div class="list-actions">
+          <button>Share List</button>
+          <button>Edit List</button>
+        </div>
+      </div>
+
+      <div class="gift-list">
+        <h3>Dad's Retirement (August 1)</h3>
+        <div class="gift-item">
+          <img src="https://giftbuddy.com/images/golfset.jpg" alt="Premium Golf Set">
+          <div>
+            <h4>Premium Golf Set</h4>
+            <p>Price: $499.99</p>
+          </div>
+        </div>
+        <div class="gift-item">
+          <img src="https://giftbuddy.com/images/watch.jpg" alt="Luxury Watch">
+          <div>
+            <h4>Luxury Watch</h4>
+            <p>Price: $299.99</p>
+          </div>
+        </div>
+        <div class="gift-item">
+          <img src="https://giftbuddy.com/images/travel-voucher.jpg" alt="Travel Voucher">
+          <div>
+            <h4>Travel Voucher</h4>
+            <p>Price: $500.00</p>
+          </div>
+        </div>
+        <button class="add-gift">Add Gift</button>
+        <div class="list-actions">
+          <button>Share List</button>
+          <button>Edit List</button>
+        </div>
+      </div>
+    </div>
+
+    <h3>Collaborative Lists</h3>
+    <p>You're contributing to these lists:</p>
+    <ul>
+      <li><a href="https://giftbuddy.com/lists/emily-birthday">Emily's Surprise Birthday (Group Gift)</a></li>
+      <li><a href="https://giftbuddy.com/lists/office-secret-santa">Office Secret Santa</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 GiftBuddy. All rights reserved. | <a href="https://giftbuddy.com/privacy">Privacy Policy</a> | <a href="https://giftbuddy.com/terms">Terms of Service</a></p>
+  </footer>
+</body></html>

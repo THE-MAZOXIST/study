@@ -1,0 +1,173 @@
+<html><head><base href="https://giftbuddy.com/friends/emily/wishlist"><title>GiftBuddy - Emily's Wishlist</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+  }
+  header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  nav {
+    background-color: #3a80d2;
+    padding: 0.5em;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+  }
+  nav a:hover {
+    background-color: #2a70c2;
+  }
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  .wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5em;
+  }
+  .wishlist-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1em;
+    text-align: center;
+  }
+  .wishlist-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+  }
+  .friend-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .friend-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 1em;
+  }
+  .purchase-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.5em;
+  }
+  .purchase-btn:hover {
+    background-color: #45a049;
+  }
+  footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .ai-suggestion {
+    background-color: #e6f2ff;
+    border-left: 5px solid #4a90e2;
+    padding: 1em;
+    margin-top: 2em;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>GiftBuddy</h1>
+    <p>Emily's Wishlist</p>
+  </header>
+  
+  <nav>
+    <a href="https://giftbuddy.com/dashboard">Dashboard</a>
+    <a href="https://giftbuddy.com/friends">Friends</a>
+    <a href="https://giftbuddy.com/lists">Gift Lists</a>
+    <a href="https://giftbuddy.com/calendar">Calendar</a>
+  </nav>
+  
+  <main>
+    <div class="friend-info">
+      <img src="https://giftbuddy.com/images/emily.jpg" alt="Emily" width="80" height="80">
+      <div>
+        <h2>Emily's Wishlist</h2>
+        <p>Birthday: August 17 (in 10 weeks)</p>
+      </div>
+    </div>
+    
+    <div class="wishlist-grid">
+      <div class="wishlist-item">
+        <img src="https://giftbuddy.com/images/polaroid-camera.jpg" alt="Polaroid Camera" width="150" height="150">
+        <h3>Polaroid Camera</h3>
+        <p>Price: $89.99</p>
+        <p>Added: 2 weeks ago</p>
+        <button class="purchase-btn">Purchase</button>
+      </div>
+      
+      <div class="wishlist-item">
+        <img src="https://giftbuddy.com/images/succulent-set.jpg" alt="Succulent Set" width="150" height="150">
+        <h3>Succulent Set</h3>
+        <p>Price: $34.99</p>
+        <p>Added: 1 month ago</p>
+        <button class="purchase-btn">Purchase</button>
+      </div>
+      
+      <div class="wishlist-item">
+        <img src="https://giftbuddy.com/images/yoga-mat.jpg" alt="Eco-friendly Yoga Mat" width="150" height="150">
+        <h3>Eco-friendly Yoga Mat</h3>
+        <p>Price: $59.99</p>
+        <p>Added: 3 days ago</p>
+        <button class="purchase-btn">Purchase</button>
+      </div>
+      
+      <div class="wishlist-item">
+        <img src="https://giftbuddy.com/images/cookbook.jpg" alt="Vegan Cookbook" width="150" height="150">
+        <h3>Vegan Cookbook</h3>
+        <p>Price: $24.99</p>
+        <p>Added: 2 months ago</p>
+        <button class="purchase-btn">Purchase</button>
+      </div>
+    </div>
+    
+    <div class="ai-suggestion">
+      <h3>AI Gift Suggestion</h3>
+      <p>Based on Emily's interests and recent wishlist additions, she might also like:</p>
+      <ul>
+        <li>A set of eco-friendly bamboo utensils for her outdoor adventures</li>
+        <li>A DIY terrarium kit to complement her love for succulents</li>
+        <li>A vintage-style photo album to store her Polaroid pictures</li>
+      </ul>
+      <a href="https://giftbuddy.com/ai-suggestions?friend=emily">See More AI Suggestions</a>
+    </div>
+    
+    <h3>Emily's Gift Preferences</h3>
+    <ul>
+      <li>Loves eco-friendly and sustainable products</li>
+      <li>Enjoys outdoor activities and yoga</li>
+      <li>Has a growing interest in photography</li>
+      <li>Prefers experiences over material items</li>
+    </ul>
+    
+    <p><a href="https://giftbuddy.com/friends/emily/gifts">View Gift History</a></p>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 GiftBuddy. All rights reserved. | <a href="https://giftbuddy.com/privacy">Privacy Policy</a> | <a href="https://giftbuddy.com/terms">Terms of Service</a></p>
+  </footer>
+</body></html>
