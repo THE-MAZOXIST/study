@@ -1,4 +1,4 @@
-<html><head><base href="https://giftbuddy.com/lists/moms-birthday/edit"><title>Edit Mom's Birthday Gift List - GiftBuddy</title>
+<html><head><base href="lists/moms-birthday/edit"><title>Edit Mom's Birthday Gift List - GiftBuddy</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -94,44 +94,44 @@
     <h1>GiftBuddy</h1>
     <p>Edit Mom's Birthday Gift List</p>
   </header>
-  
+
   <nav>
-    <a href="https://giftbuddy.com/dashboard">Dashboard</a>
-    <a href="https://giftbuddy.com/friends">Friends</a>
-    <a href="https://giftbuddy.com/lists">Gift Lists</a>
-    <a href="https://giftbuddy.com/calendar">Calendar</a>
+    <a href="dashboard">Dashboard</a>
+    <a href="friends">Friends</a>
+    <a href="lists">Gift Lists</a>
+    <a href="calendar">Calendar</a>
   </nav>
-  
+
   <main>
     <h2>Mom's Birthday - June 15</h2>
-    
-    <form action="https://giftbuddy.com/lists/moms-birthday/update" method="POST">
+
+    <form action="lists/moms-birthday/update" method="POST">
       <div class="gift-item">
         <input type="text" name="gift1" value="Vegan Cookbook" required>
         <textarea name="notes1" placeholder="Add notes...">The new bestseller by Chef Green</textarea>
         <input type="number" name="price1" placeholder="Price" value="24.99">
         <button type="button" class="remove-gift">Remove</button>
       </div>
-      
+
       <div class="gift-item">
         <input type="text" name="gift2" value="Gardening Tools Set" required>
         <textarea name="notes2" placeholder="Add notes...">Eco-friendly set with bamboo handles</textarea>
         <input type="number" name="price2" placeholder="Price" value="49.99">
         <button type="button" class="remove-gift">Remove</button>
       </div>
-      
+
       <div class="gift-item">
         <input type="text" name="gift3" value="Spa Day Gift Certificate" required>
         <textarea name="notes3" placeholder="Add notes...">Full day package at Serenity Spa</textarea>
         <input type="number" name="price3" placeholder="Price" value="150.00">
         <button type="button" class="remove-gift">Remove</button>
       </div>
-      
+
       <button type="button" class="add-gift">Add Another Gift</button>
-      
+
       <button type="submit" class="save-list">Save List</button>
     </form>
-    
+
     <div class="ai-suggestions">
       <h3>AI Gift Suggestions</h3>
       <p>Based on Mom's interests and your previous gifts, here are some additional ideas:</p>
@@ -141,11 +141,11 @@
         <li>Gourmet Tea Sampler</li>
         <li>Indoor Herb Garden Kit</li>
       </ul>
-      <button onclick="location.href='https://giftbuddy.com/ai-suggestions?for=mom'">Get More AI Suggestions</button>
+      <button onclick="location.href='ai-suggestions?for=mom'">Get More AI Suggestions</button>
     </div>
-    
+
     <h3>List Settings</h3>
-    <form action="https://giftbuddy.com/lists/moms-birthday/settings" method="POST">
+    <form action="lists/moms-birthday/settings" method="POST">
       <label>
         <input type="checkbox" name="collaborative" checked> Allow family members to edit this list
       </label><br>
@@ -157,13 +157,13 @@
       </label><br>
       <button type="submit">Save Settings</button>
     </form>
-    
+
     <h3>Gift History</h3>
-    <p>View <a href="https://giftbuddy.com/history/mom">past gifts</a> you've given to Mom for inspiration.</p>
+    <p>View <a href="history/mom">past gifts</a> you've given to Mom for inspiration.</p>
   </main>
-  
+
   <footer>
-    <p>&copy; 2023 GiftBuddy. All rights reserved. | <a href="https://giftbuddy.com/privacy">Privacy Policy</a> | <a href="https://giftbuddy.com/terms">Terms of Service</a></p>
+    <p>&copy; 2023 GiftBuddy. All rights reserved. | <a href="privacy">Privacy Policy</a> | <a href="terms">Terms of Service</a></p>
   </footer>
 
   <script>
